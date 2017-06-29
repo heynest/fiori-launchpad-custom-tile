@@ -8,7 +8,7 @@ This is an example project for a custom SAP Fiori launchpad tile for SAP Cloud P
 3. Select New Application and define an name, in our case "**ui5concustomtile**"
 
 # 2. How to set-up a SAP Fiori Launchpad in SAP Cloud Platform
-* You need to use the SAP Cloud Platform **Portal** service, see official documentation for** 
+* You need to use the SAP Cloud Platform **Portal** service, see official documentation for**
 ** [Portal on Neo Environment](https://help.hana.ondemand.com/cloud_portal/frameset.htm?69000b4a09b54f33bef1b58a1dbb4001.html) or
 ** [Portal on Cloud Foundry Environment](https://help.hana.ondemand.com/cloud_portal/frameset.htm?c6984678cb4a475ea82cefdcf15a840d.html)
 
