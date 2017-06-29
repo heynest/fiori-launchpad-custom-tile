@@ -46,9 +46,9 @@ sap.ui.define([
 	}
 
 	function openApp(sUrl) {
-        if (typeof sUrl !== "string" || sUrl.length < 1 ) {
-            return;
-        }
+		if (typeof sUrl !== "string" || sUrl.length < 1 ) {
+			return;
+		}
 
 		if (sUrl[0] === "#"){
 			// this is an intent see
