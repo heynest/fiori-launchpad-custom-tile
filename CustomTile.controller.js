@@ -90,7 +90,7 @@ sap.ui.define([
 
 			// uncomment the following lines
 			// to open the configured app instead
-            // var sTargetUrl = oEvent.getSource().data("href");
+			// var sTargetUrl = oEvent.getSource().data("href");
 			// openApp(sTargetUrl);
 		}
 	});
