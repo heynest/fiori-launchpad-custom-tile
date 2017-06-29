@@ -1,0 +1,22 @@
+<mvc:View controllerName="ui5con.flp.customtile.CustomTile"
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	<GenericTile 
+			id="tile"
+			header="Speaker Countdown"
+			subheader="{/mins}"
+			press="onTilePressed"
+			app:href="{/targetUrl}">
+		<tileContent>
+			<TileContent unit="min">
+				<content>
+					<NumericContent 
+							value="{/mins}:{= ${/secs} &lt; 10 ? '0' : ''}{/secs}"/> <!-- show 1:07 instead of 1:7 --> 
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+</mvc:View>

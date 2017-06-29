@@ -1,0 +1,47 @@
+{
+	"_version": "1.5.0",
+	"sap.app": {
+		"_version": "1.2.0",
+		"id": "ui5con.flp.customtile",
+		"type": "application",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{plugin_title}}",
+		"ach": "",
+		"resources": "resources.json"
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": []
+	},
+	"sap.flp": {
+		"type": "tile",
+		"config": {}
+	},
+	"sap.platform.hcp": {
+		"uri": "",
+		"_version": "1.1.0"
+	},
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "1.28.0",
+			"libs": {
+				"sap.fiori": {
+					"minVersion": ""
+				}
+			}
+		},
+		"contentDensities": {
+			"compact": false,
+			"cozy": false
+		},
+		"routing": {}
+	}
+}
