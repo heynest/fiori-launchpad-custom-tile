@@ -7,7 +7,7 @@
 	<GenericTile 
 			id="tile"
 			header="Speaker Countdown"
-			subheader="{/mins}"
+			subheader="{/title}"
 			press="onTilePressed"
 			app:href="{/targetUrl}">
 		<tileContent>

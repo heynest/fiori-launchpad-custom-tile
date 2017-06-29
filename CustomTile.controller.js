@@ -16,7 +16,7 @@ sap.ui.define([
 		nMins = Math.max(nMins, 0);
 		if (nMins >= N_MAX_MINS) {
 			nMins = N_MAX_MINS;
-			nSecs = 0; // do not exeed maximum
+			nSecs = 0; // do not exceed maximum
 		}
 		
 		oModel.setProperty("/mins", nMins);
@@ -45,6 +45,22 @@ sap.ui.define([
 		setCountdown(nMins + nAddedMins, nSecs);
 	}
 
+	function openApp(sUrl) {
+        if (typeof sUrl !== "string" || sUrl.length < 1 ) {
+            return;
+        }
+
+		if (sUrl[0] === "#"){
+			// this is an intent see
+			// https://help.hana.ondemand.com/cloud_portal/frameset.htm?1888fdf908bc4622a3b56f0c7a2523a9.html
+			hasher.setHash(sUrl);
+			return;
+		}
+
+		// this is an arbitrary URL
+		window.open(sUrl, "_blank");
+	}
+
 	return Controller.extend("ui5con.flp.customtile.CustomTile", {
 
 		onInit: function() {
@@ -70,8 +86,12 @@ sap.ui.define([
 		},
 
 		onTilePressed: function() {
-			// var sTargetUrl = oEvent.getSource().data("href");
 			addMins(1);
+
+			// uncomment the following lines
+			// to open the configured app instead
+            // var sTargetUrl = oEvent.getSource().data("href");
+			// openApp(sTargetUrl);
 		}
 	});
 
