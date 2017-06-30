@@ -72,7 +72,7 @@ sap.ui.define([
 			oModel = new JSONModel({
 				mins: 0,
 				secs: 0,
-				title: oComponent.getTitle() || "ui5con",
+				subtitle: oComponent.getTitle() || "ui5con",
 				targetUrl: oComponent.getTargetUrl()
 			});
 			
