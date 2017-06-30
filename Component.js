@@ -5,8 +5,8 @@ sap.ui.define([
 	var N_MAX_MINS = 9; // max 4 characters are shown by NumericContent
 	
 	function getAbsoluteFilePath(sRelativeFilePath) {
-			var oApplicationRoot = jQuery.sap.getModulePath("ui5con.flp.customtile");
-			return oApplicationRoot + "/" + sRelativeFilePath;
+		var oApplicationRoot = jQuery.sap.getModulePath("ui5con.flp.customtile");
+		return oApplicationRoot + "/" + sRelativeFilePath;
 	}
 	
 	function logParseError(sStartTime) {

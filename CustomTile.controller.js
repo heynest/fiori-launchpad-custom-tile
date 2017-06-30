@@ -70,8 +70,8 @@ sap.ui.define([
 			// set "globals"
 			N_MAX_MINS = oComponent.getMaxMins();
 			oModel = new JSONModel({
-				mins: 0,
-				secs: 0,
+				mins: 0, // set via setCountdown()
+				secs: 0, // set via setCountdown()
 				subtitle: oComponent.getTitle() || "ui5con",
 				targetUrl: oComponent.getTargetUrl(),
 				tileSize: oComponent.getTileSize()
@@ -91,8 +91,8 @@ sap.ui.define([
 
 			// uncomment the following lines
 			// to open the configured app instead
-			//var sTargetUrl = oEvent.getSource().data("href");
-			//openApp(sTargetUrl);
+			// var sTargetUrl = oEvent.getSource().data("href");
+			// openApp(sTargetUrl);
 		}
 	});
 
