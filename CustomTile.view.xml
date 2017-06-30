@@ -9,6 +9,7 @@
 			header="{i18n>tile_title}"
 			subheader="{/subtitle}"
 			press="onTilePressed"
+			frameType="{= ${/tileSize} === '1x2'  ? 'TwoByOne' : 'OneByOne'}"
 			app:href="{/targetUrl}">
 		<tileContent>
 			<TileContent unit="{i18n>tile_unit}">

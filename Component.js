@@ -68,9 +68,12 @@ sap.ui.define([
 			Component.prototype.init.apply(this, arguments);
 		},
 		
+		getMaxMins: function () {
+			return N_MAX_MINS;
+		},
+		
 		// Recommendation: Encapsulate reading of ComponentData in getters 
 		// as the structure may change
-		
 		getStartTime: function () {
 			var oComponentProperties = this.getComponentData().properties || {};
 			var sStartTime = oComponentProperties.startTime;
@@ -89,8 +92,10 @@ sap.ui.define([
 			return oComponentProperties.navigation_target_url;
 		},
 		
-		getMaxMins: function () {
-			return N_MAX_MINS;
+		
+		getTileSize: function() {
+			var oComponentProperties = this.getComponentData().properties || {};
+			return oComponentProperties.tile_size;
 		}
 	});
 });

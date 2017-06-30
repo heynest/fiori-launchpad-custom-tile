@@ -51,7 +51,7 @@ sap.ui.define([
 		}
 
 		if (sUrl[0] === "#"){
-			// this is an intent see
+			// use the hasher object in case the URL is an intent, see 
 			// https://help.hana.ondemand.com/cloud_portal/frameset.htm?1888fdf908bc4622a3b56f0c7a2523a9.html
 			hasher.setHash(sUrl);
 			return;
@@ -73,7 +73,8 @@ sap.ui.define([
 				mins: 0,
 				secs: 0,
 				subtitle: oComponent.getTitle() || "ui5con",
-				targetUrl: oComponent.getTargetUrl()
+				targetUrl: oComponent.getTargetUrl(),
+				tileSize: oComponent.getTileSize()
 			});
 			
 			// use setCountDown before the model is set, so no invalid times
@@ -86,7 +87,7 @@ sap.ui.define([
 		},
 
 		onTilePressed: function(oEvent) {
-			//addMins(1);
+			addMins(1);
 
 			// uncomment the following lines
 			// to open the configured app instead
