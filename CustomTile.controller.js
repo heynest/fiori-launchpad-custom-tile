@@ -85,13 +85,13 @@ sap.ui.define([
 			setInterval(countDown, 1000);
 		},
 
-		onTilePressed: function() {
-			addMins(1);
+		onTilePressed: function(oEvent) {
+			//addMins(1);
 
 			// uncomment the following lines
 			// to open the configured app instead
-			// var sTargetUrl = oEvent.getSource().data("href");
-			// openApp(sTargetUrl);
+			//var sTargetUrl = oEvent.getSource().data("href");
+			//openApp(sTargetUrl);
 		}
 	});
 
