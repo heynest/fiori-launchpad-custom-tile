@@ -7,7 +7,8 @@
 		"applicationVersion": {
 			"version": "1.0.0"
 		},
-		"title": "{{plugin_title}}",
+		"i18n": "i18n/i18n.properties",
+		"title": "{{tile_title}}",
 		"ach": "",
 		"resources": "resources.json"
 	},
@@ -41,6 +42,14 @@
 		"contentDensities": {
 			"compact": false,
 			"cozy": false
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "ui5con.flp.customtile.i18n.i18n"
+				}
+			}
 		},
 		"routing": {}
 	}
